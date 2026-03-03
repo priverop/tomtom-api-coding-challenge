@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.tomtom.com/search/2/poiSearch/Fischers.json?key=<SECRET_KEY>&lat=51.50&limit=10&lon=-0.13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '94'
+      Tracking-Id:
+      - cc87db02-e506-461a-afef-7ca579d2ac33
+      Date:
+      - Mon, 29 Dec 2025 16:12:54 GMT
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westeurope
+      X-Tomtom-Upstream-Service-Time:
+      - '23'
+      X-Tomtom-Attempt-Count:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"detailedError":{"code":"Forbidden","message":"You are not allowed
+        to access this endpoint"}}'
+  recorded_at: Mon, 29 Dec 2025 16:12:54 GMT
+recorded_with: VCR 6.4.0

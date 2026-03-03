@@ -1,0 +1,3 @@
+version = 1
+url = "https://api.tomtom.com/search/2/nearbySearch/.json?key={{API_KEY}}&lat=51.5095241&lon=-0.1388344&categorySet=7315004&limit=10"
+method = "GET"
