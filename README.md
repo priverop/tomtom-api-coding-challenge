@@ -1,5 +1,7 @@
 # Ruby code challenge
 
+This is a code challenge I did for a Senior Ruby on Rails Engineer (which I passed!). The project was made in another repository, that's why there are not many commits.
+
 ## Requirements
 
 This project runs with [Dev Containers](https://guides.rubyonrails.org/getting_started_with_devcontainer.html). Install [VS Code](https://code.visualstudio.com/), and the [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
