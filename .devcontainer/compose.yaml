@@ -1,4 +1,4 @@
-name: "ruby-code-challenge-pablo-rivero"
+name: "tomtom-api-coding-challenge"
 
 services:
   rails-app:
@@ -7,7 +7,7 @@ services:
       dockerfile: .devcontainer/Dockerfile
 
     volumes:
-      - ../../ruby-code-challenge-pablo-rivero:/workspaces/ruby-code-challenge-pablo-rivero:cached
+      - ../../tomtom-api-coding-challenge:/workspaces/tomtom-api-coding-challenge:cached
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
