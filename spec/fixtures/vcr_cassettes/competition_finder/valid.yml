@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.tomtom.com/search/2/poiSearch/Fischers.json?key=<SECRET_KEY>&lat=51.5&limit=10&lon=-0.13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Jan 2026 16:44:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - cf4ab4f1-97d2-4f69-ab7b-af746a535c9f
+      Vary:
+      - accept-encoding,origin
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westeurope
+      X-Tomtom-Upstream-Service-Time:
+      - '268'
+      X-Tomtom-Attempt-Count:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdW1tYXJ5Ijp7InF1ZXJ5IjoiZmlzY2hlcnMiLCJxdWVyeVR5cGUiOiJOT05fTkVBUiIsInF1ZXJ5VGltZSI6MjQzLCJudW1SZXN1bHRzIjo4LCJvZmZzZXQiOjAsInRvdGFsUmVzdWx0cyI6OCwiZnV6enlMZXZlbCI6MSwiZ2VvQmlhcyI6eyJsYXQiOjUxLjUsImxvbiI6LTAuMTN9fSwicmVzdWx0cyI6W3sidHlwZSI6IlBPSSIsImlkIjoiQTdMM3Z6bTBqelliVlQ5ck9TWE1EUSIsInNjb3JlIjowLjk3Njc1ODY1ODksImRpc3QiOjI4MzMuNjc4ODY0LCJpbmZvIjoic2VhcmNoOnRhOjgyNjAwOTAwNDYxNTQwMy1HQiIsIm1hdGNoQ29uZmlkZW5jZSI6eyJzY29yZSI6MX0sInBvaSI6eyJuYW1lIjoiRmlzY2hlcidzIiwicGhvbmUiOiIrNDQgMjAgNzQ2NiA1NTAxIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3MzE1MDA0fV0sInVybCI6Ind3dy5maXNjaGVycy5jby51ay8iLCJjYXRlZ29yaWVzIjpbImF1c3RyaWFuIiwicmVzdGF1cmFudCJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJSRVNUQVVSQU5UIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJyZXN0YXVyYW50In0seyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiYXVzdHJpYW4ifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiNTAiLCJzdHJlZXROYW1lIjoiTWFyeWxlYm9uZSBIaWdoIFN0cmVldCIsIm11bmljaXBhbGl0eSI6IkxvbmRvbiIsIm5laWdoYm91cmhvb2QiOiJNYXJ5bGVib25lIiwiY291bnRyeVNlY29uZGFyeVN1YmRpdmlzaW9uIjoiTG9uZG9uIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiRU5HIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IkVuZ2xhbmQiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiRU5HIiwicG9zdGFsQ29kZSI6IlcxVSIsImV4dGVuZGVkUG9zdGFsQ29kZSI6IlcxVSA1SE4iLCJjb3VudHJ5Q29kZSI6IkdCIiwiY291bnRyeSI6IlVuaXRlZCBLaW5nZG9tIiwiY291bnRyeUNvZGVJU08zIjoiR0JSIiwiZnJlZWZvcm1BZGRyZXNzIjoiNTAgTWFyeWxlYm9uZSBIaWdoIFN0cmVldCwgTG9uZG9uLCBXMVUgNUhOIiwibG9jYWxOYW1lIjoiTG9uZG9uIn0sInBvc2l0aW9uIjp7ImxhdCI6NTEuNTIxNjM1LCJsb24iOi0wLjE1MTYzOH0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjUxLjUyMjUzLCJsb24iOi0wLjE1MzA4fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjUxLjUyMDc0LCJsb24iOi0wLjE1MDE5fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NTEuNTIxNzEsImxvbiI6LTAuMTUxNzV9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiOGRDaTNSRldJOVFwdkxZem9oYVJZUSIsInNjb3JlIjowLjg2MDQ2NTg4NDIsImRpc3QiOjEyNzkxLjc4MjMsImluZm8iOiJzZWFyY2g6dGE6ODI2MDA2MDA0MjA0MzE1LUdCIiwibWF0Y2hDb25maWRlbmNlIjp7InNjb3JlIjowLjkzMDMzMTAxMTI2MDc1ODh9LCJwb2kiOnsibmFtZSI6IkZpc2NoZXIgRmFybXMiLCJjYXRlZ29yeVNldCI6W3siaWQiOjkzNjEwMzl9XSwidXJsIjoiZmlzY2hlcmZhcm1zLmNvLnVrLyIsImNhdGVnb3JpZXMiOlsic2hvcCIsInNwb3J0cyBlcXVpcG1lbnQgY2xvdGhpbmciXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiU0hPUCIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoic2hvcCJ9LHsibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6InNwb3J0cyBlcXVpcG1lbnQgY2xvdGhpbmcifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6Ildvb2RiZXJyeSBHcm92ZSIsIm11bmljaXBhbGl0eVN1YmRpdmlzaW9uIjoiTm9ydGggRmluY2hsZXkiLCJtdW5pY2lwYWxpdHkiOiJMb25kb24iLCJuZWlnaGJvdXJob29kIjoiV29vZGhvdXNlIiwiY291bnRyeVNlY29uZGFyeVN1YmRpdmlzaW9uIjoiTG9uZG9uIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiRU5HIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IkVuZ2xhbmQiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiRU5HIiwicG9zdGFsQ29kZSI6Ik4xMiIsImV4dGVuZGVkUG9zdGFsQ29kZSI6Ik4xMiAwRFIiLCJjb3VudHJ5Q29kZSI6IkdCIiwiY291bnRyeSI6IlVuaXRlZCBLaW5nZG9tIiwiY291bnRyeUNvZGVJU08zIjoiR0JSIiwiZnJlZWZvcm1BZGRyZXNzIjoiV29vZGJlcnJ5IEdyb3ZlLCBOb3J0aCBGaW5jaGxleSwgTG9uZG9uLCBOMTIgMERSIiwibG9jYWxOYW1lIjoiTG9uZG9uIn0sInBvc2l0aW9uIjp7ImxhdCI6NTEuNjExMDMsImxvbiI6LTAuMTc4NDJ9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo1MS42MTE5MywibG9uIjotMC4xNzk4N30sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo1MS42MTAxMywibG9uIjotMC4xNzY5N319LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjUxLjYxMTA4LCJsb24iOi0wLjE3ODE3fX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IkdHRHMtdnl6SmZ5Z1lMRzB3bFctcEEiLCJzY29yZSI6MC43NjI3Njk1Nzk5LCJkaXN0Ijo1NzgyLjI3OTQyNSwiaW5mbyI6InNlYXJjaDp0YTo4MjYwMDYwMDEyNTQ1ODktR0IiLCJtYXRjaENvbmZpZGVuY2UiOnsic2NvcmUiOjAuODkxNjU0NjEzOTA3NTI4NH0sInBvaSI6eyJuYW1lIjoiSnVsaWFuIEZpc2NoZXIiLCJwaG9uZSI6Iis0NCA3NTg1IDcxMzcwNyIsImNhdGVnb3J5U2V0IjpbeyJpZCI6OTM1Mn1dLCJjYXRlZ29yaWVzIjpbImNvbXBhbnkiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ09NUEFOWSIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY29tcGFueSJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiI2MEEiLCJzdHJlZXROYW1lIjoiUm93bGV5IFdheSIsIm11bmljaXBhbGl0eVN1YmRpdmlzaW9uIjoiU2FpbnQgSm9obnMgV29vZCIsIm11bmljaXBhbGl0eSI6IkxvbmRvbiIsIm5laWdoYm91cmhvb2QiOiJSb3dsZXkgV2F5IiwiY291bnRyeVNlY29uZGFyeVN1YmRpdmlzaW9uIjoiTG9uZG9uIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiRU5HIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IkVuZ2xhbmQiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiRU5HIiwicG9zdGFsQ29kZSI6Ik5XOCIsImV4dGVuZGVkUG9zdGFsQ29kZSI6Ik5XOCAwU0oiLCJjb3VudHJ5Q29kZSI6IkdCIiwiY291bnRyeSI6IlVuaXRlZCBLaW5nZG9tIiwiY291bnRyeUNvZGVJU08zIjoiR0JSIiwiZnJlZWZvcm1BZGRyZXNzIjoiNjBBIFJvd2xleSBXYXksIFNhaW50IEpvaG5zIFdvb2QsIExvbmRvbiwgTlc4IDBTSiIsImxvY2FsTmFtZSI6IkxvbmRvbiJ9LCJwb3NpdGlvbiI6eyJsYXQiOjUxLjUzOTgyNSwibG9uIjotMC4xODM3Mzh9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo1MS41NDA3MiwibG9uIjotMC4xODUxOH0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo1MS41Mzg5MywibG9uIjotMC4xODIyOX19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjUxLjUzOTkxLCJsb24iOi0wLjE4Mzh9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiRXV6RGpySktkZEE4Qk5YSHpWTEZIZyIsInNjb3JlIjowLjc0OTc3NDM5NjQsImRpc3QiOjEwNDg3LjIxNzgyNSwiaW5mbyI6InNlYXJjaDp0YTo4MjYwMDYwMDE4OTQ2MjAtR0IiLCJtYXRjaENvbmZpZGVuY2UiOnsic2NvcmUiOjAuODM5MjI5NDY5MzI4MjQyN30sInBvaSI6eyJuYW1lIjoiRmlzY2hlciBGdXR1cmUgSGVhdCBVayIsInBob25lIjoiKzQ0IDIwIDgxNDUgMzU0NSIsImNhdGVnb3J5U2V0IjpbeyJpZCI6OTM2MTA1Mn1dLCJ1cmwiOiJmaXNjaGVyZnV0dXJlaGVhdC5jb20vIiwiY2F0ZWdvcmllcyI6WyJlbGVjdHJpY2FsIGFwcGxpYW5jZSIsInNob3AiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiU0hPUCIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiZWxlY3RyaWNhbCBhcHBsaWFuY2UifSx7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJzaG9wIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjIyIiwic3RyZWV0TmFtZSI6IkNvbmNvcmQgUm9hZCIsIm11bmljaXBhbGl0eVN1YmRpdmlzaW9uIjoiQWN0b24iLCJtdW5pY2lwYWxpdHkiOiJMb25kb24iLCJuZWlnaGJvdXJob29kIjoiTm9ydGggQWN0b24iLCJjb3VudHJ5U2Vjb25kYXJ5U3ViZGl2aXNpb24iOiJMb25kb24iLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJFTkciLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiRW5nbGFuZCIsImNvdW50cnlTdWJkaXZpc2lvbkNvZGUiOiJFTkciLCJwb3N0YWxDb2RlIjoiVzMiLCJleHRlbmRlZFBvc3RhbENvZGUiOiJXMyAwVEgiLCJjb3VudHJ5Q29kZSI6IkdCIiwiY291bnRyeSI6IlVuaXRlZCBLaW5nZG9tIiwiY291bnRyeUNvZGVJU08zIjoiR0JSIiwiZnJlZWZvcm1BZGRyZXNzIjoiMjIgQ29uY29yZCBSb2FkLCBBY3RvbiwgTG9uZG9uLCBXMyAwVEgiLCJsb2NhbE5hbWUiOiJMb25kb24ifSwicG9zaXRpb24iOnsibGF0Ijo1MS41MjI2NTgsImxvbiI6LTAuMjc3MTA0fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6NTEuNTIzNTYsImxvbiI6LTAuMjc4NTV9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NTEuNTIxNzYsImxvbiI6LTAuMjc1NjZ9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo1MS41MjI1OSwibG9uIjotMC4yNzc1OX19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiI0QU9Zd3dzemlxS3lhVXJKV0dSaTZ3Iiwic2NvcmUiOjAuNjQ5ODE1MTQyMiwiZGlzdCI6MTUyNDIuNDA0NjA3LCJpbmZvIjoic2VhcmNoOnRhOjgyNjAwNjAwMjc3OTQ5NS1HQiIsIm1hdGNoQ29uZmlkZW5jZSI6eyJzY29yZSI6MC44NTA4OTAyMDc1OTk2ODk5fSwicG9pIjp7Im5hbWUiOiJOaW5hIEZpc2NoZXIgTnV0cml0aW9uIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo5NjYzMDAzfV0sImNhdGVnb3JpZXMiOlsiaGVhbHRoIGNhcmUgc2VydmljZSIsInBlcnNvbmFsIGNhcmUgZmFjaWxpdHkiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiSEVBTFRIX0NBUkVfU0VSVklDRSIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiaGVhbHRoIGNhcmUgc2VydmljZSJ9LHsibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6InBlcnNvbmFsIGNhcmUgZmFjaWxpdHkifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiMzUiLCJzdHJlZXROYW1lIjoiQnJvb20gQ2xvc2UiLCJtdW5pY2lwYWxpdHkiOiJUZWRkaW5ndG9uIiwiY291bnRyeVNlY29uZGFyeVN1YmRpdmlzaW9uIjoiTWlkZGxlc2V4IiwiY291bnRyeVN1YmRpdmlzaW9uIjoiRU5HIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IkVuZ2xhbmQiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiRU5HIiwicG9zdGFsQ29kZSI6IlRXMTEiLCJleHRlbmRlZFBvc3RhbENvZGUiOiJUVzExIDlSSiIsImNvdW50cnlDb2RlIjoiR0IiLCJjb3VudHJ5IjoiVW5pdGVkIEtpbmdkb20iLCJjb3VudHJ5Q29kZUlTTzMiOiJHQlIiLCJmcmVlZm9ybUFkZHJlc3MiOiIzNSBCcm9vbSBDbG9zZSwgVGVkZGluZ3RvbiwgVFcxMSA5UkoiLCJsb2NhbE5hbWUiOiJUZWRkaW5ndG9uIn0sInBvc2l0aW9uIjp7ImxhdCI6NTEuNDE5OTg5LCJsb24iOi0wLjMwODY0MX0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjUxLjQyMDg5LCJsb24iOi0wLjMxMDA4fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjUxLjQxOTA5LCJsb24iOi0wLjMwNzJ9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo1MS40MjAxMSwibG9uIjotMC4zMDg2NH19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiI5ckpyQWhxSkJrSGN3RkJYcGRhcnh3Iiwic2NvcmUiOjAuNjE3OTI3MTM0LCJkaXN0IjoyMTk2MS4zMjYzNzgsImluZm8iOiJzZWFyY2g6dGE6ODI2MDA2MDA0MDQ0MjgyLUdCIiwibWF0Y2hDb25maWRlbmNlIjp7InNjb3JlIjowLjg1MDYyNjkxMjE3MjMzNH0sInBvaSI6eyJuYW1lIjoiRmlzY2hlcidzIENsb3NlIFBsYXkgQXJlYSIsImNhdGVnb3J5U2V0IjpbeyJpZCI6OTM3OH1dLCJjYXRlZ29yaWVzIjpbImxlaXN1cmUgY2VudGVyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkxFSVNVUkVfQ0VOVEVSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJsZWlzdXJlIGNlbnRlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiIyOCIsInN0cmVldE5hbWUiOiJSaXZlciBDbG9zZSIsIm11bmljaXBhbGl0eSI6IldhbHRoYW0gQ3Jvc3MiLCJjb3VudHJ5U2Vjb25kYXJ5U3ViZGl2aXNpb24iOiJIZXJ0Zm9yZHNoaXJlIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiRU5HIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IkVuZ2xhbmQiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiRU5HIiwicG9zdGFsQ29kZSI6IkVOOCIsImV4dGVuZGVkUG9zdGFsQ29kZSI6IkVOOCA3IiwiY291bnRyeUNvZGUiOiJHQiIsImNvdW50cnkiOiJVbml0ZWQgS2luZ2RvbSIsImNvdW50cnlDb2RlSVNPMyI6IkdCUiIsImZyZWVmb3JtQWRkcmVzcyI6IjI4IFJpdmVyIENsb3NlLCBXYWx0aGFtIENyb3NzLCBFTjggNyIsImxvY2FsTmFtZSI6IldhbHRoYW0gQ3Jvc3MifSwicG9zaXRpb24iOnsibGF0Ijo1MS42ODQyLCJsb24iOi0wLjAxNTN9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo1MS42ODUxLCJsb24iOi0wLjAxNjc1fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjUxLjY4MzMsImxvbiI6LTAuMDEzODV9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo1MS42ODQ0NSwibG9uIjotMC4wMTQ3OX19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiJVdWVoNVNkRXduOXZFQWZUNEpaS1pBIiwic2NvcmUiOjAuNTU0OTgxMjMxNywiZGlzdCI6NjgwNzk4Ljg1MTI1NCwiaW5mbyI6InNlYXJjaDp0YToyNzYwMDkwMDc0ODE4NDUtREUiLCJtYXRjaENvbmZpZGVuY2UiOnsic2NvcmUiOjF9LCJwb2kiOnsibmFtZSI6IkZpc2NoZXJzIiwicGhvbmUiOiIrNDkgNDk1MSAxNDQxNDA0IiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3MzE1MDMzfV0sInVybCI6Ind3dy5lc3RyZWxsYS1nYXN0cm8uZGUvZmlzY2hlcnMtbGluZGVuLmh0bWwiLCJjYXRlZ29yaWVzIjpbIm1leGljYW4iLCJyZXN0YXVyYW50Il0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IlJFU1RBVVJBTlQiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6InJlc3RhdXJhbnQifSx7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJtZXhpY2FuIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjQ5Iiwic3RyZWV0TmFtZSI6IkxpbW1lcnN0cmHDn2UiLCJtdW5pY2lwYWxpdHlTdWJkaXZpc2lvbiI6IkxpbmRlbi1Ob3JkIiwibXVuaWNpcGFsaXR5IjoiSGFubm92ZXIiLCJjb3VudHJ5U2Vjb25kYXJ5U3ViZGl2aXNpb24iOiJSZWdpb24gSGFubm92ZXIiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJOaWVkZXJzYWNoc2VuIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6Ik5pZWRlcnNhY2hzZW4iLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiTkkiLCJwb3N0YWxDb2RlIjoiMzA0NTEiLCJjb3VudHJ5Q29kZSI6IkRFIiwiY291bnRyeSI6IkRldXRzY2hsYW5kIiwiY291bnRyeUNvZGVJU08zIjoiREVVIiwiZnJlZWZvcm1BZGRyZXNzIjoiTGltbWVyc3RyYcOfZSA0OSwgMzA0NTEgSGFubm92ZXIiLCJsb2NhbE5hbWUiOiJIYW5ub3ZlciJ9LCJwb3NpdGlvbiI6eyJsYXQiOjUyLjM3MzM5LCJsb24iOjkuNzA3MTV9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo1Mi4zNzQyOSwibG9uIjo5LjcwNTY4fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjUyLjM3MjQ5LCJsb24iOjkuNzA4NjJ9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo1Mi4zNzM1MywibG9uIjo5LjcwNzI4fX0seyJ0eXBlIjoibWlub3IiLCJwb3NpdGlvbiI6eyJsYXQiOjUyLjM3MzQ0LCJsb24iOjkuNzA3fX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6Il9maUFKM0pjN0VsM2VIZVRRTlRXS0EiLCJzY29yZSI6MC40MDQyODg1OSwiZGlzdCI6NzA3NDguNTE1MDk3LCJpbmZvIjoic2VhcmNoOnRhOjgyNjAwNjAwMjQxMTc1My1HQiIsIm1hdGNoQ29uZmlkZW5jZSI6eyJzY29yZSI6MC44ODg4MTY4NjAyNDUzMzg5fSwicG9pIjp7Im5hbWUiOiJGaXNjaGVyIEZpeGluZ3MiLCJwaG9uZSI6Iis0NCAxNDkxIDgyNzkwMCIsImNhdGVnb3J5U2V0IjpbeyJpZCI6OTM1MjAxMX1dLCJjYXRlZ29yaWVzIjpbImNvbXBhbnkiLCJtYW51ZmFjdHVyaW5nIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNPTVBBTlkiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNvbXBhbnkifSx7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJtYW51ZmFjdHVyaW5nIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE5hbWUiOiJIaXRoZXJjcm9mdCBSb2FkIiwibXVuaWNpcGFsaXR5IjoiV2FsbGluZ2ZvcmQiLCJjb3VudHJ5U2Vjb25kYXJ5U3ViZGl2aXNpb24iOiJPeGZvcmRzaGlyZSIsImNvdW50cnlTdWJkaXZpc2lvbiI6IkVORyIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJFbmdsYW5kIiwiY291bnRyeVN1YmRpdmlzaW9uQ29kZSI6IkVORyIsInBvc3RhbENvZGUiOiJPWDEwIiwiY291bnRyeUNvZGUiOiJHQiIsImNvdW50cnkiOiJVbml0ZWQgS2luZ2RvbSIsImNvdW50cnlDb2RlSVNPMyI6IkdCUiIsImZyZWVmb3JtQWRkcmVzcyI6IkhpdGhlcmNyb2Z0IFJvYWQsIFdhbGxpbmdmb3JkLCBPWDEwIiwibG9jYWxOYW1lIjoiV2FsbGluZ2ZvcmQifSwicG9zaXRpb24iOnsibGF0Ijo1MS41OTYyLCJsb24iOi0xLjE0MTR9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo1MS41OTcxLCJsb24iOi0xLjE0Mjg1fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjUxLjU5NTMsImxvbiI6LTEuMTM5OTV9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo1MS41OTYyMiwibG9uIjotMS4xNDE3NX19XX1dfQ==
+  recorded_at: Thu, 01 Jan 2026 16:44:03 GMT
+- request:
+    method: get
+    uri: http://api.tomtom.com/search/2/nearbySearch/.json?categorySet=7315004&key=<SECRET_KEY>&lat=51.5&limit=10&lon=-0.13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Jan 2026 16:44:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 6f5a9d35-97b7-4362-9c76-c63e4b7ebfaa
+      Vary:
+      - accept-encoding,origin
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westeurope
+      X-Tomtom-Upstream-Service-Time:
+      - '116'
+      X-Tomtom-Attempt-Count:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"queryType":"NEARBY","queryTime":91,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":51.5,"lon":-0.13}},"results":[{"type":"POI","id":"7fsN63o9NlHG5vfSEoxRdw","score":98.8804016113,"dist":1119.601278,"info":"search:ta:826009002109520-GB","poi":{"name":"The
+        Wolseley","phone":"+44 20 7499 6996","categorySet":[{"id":7315004}],"url":"www.thewolseley.com/","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"160","streetName":"Piccadilly","municipalitySubdivision":"Westminster","municipality":"London","neighbourhood":"Green
+        Park","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"SW1A","extendedPostalCode":"SW1A
+        1RA","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"160
+        Piccadilly, Westminster, London, SW1A 1RA","localName":"London"},"position":{"lat":51.507415,"lon":-0.140943},"viewport":{"topLeftPoint":{"lat":51.50831,"lon":-0.14239},"btmRightPoint":{"lat":51.50652,"lon":-0.1395}},"entryPoints":[{"type":"main","position":{"lat":51.50734,"lon":-0.14115}}]},{"type":"POI","id":"A7L3vzm0jzYbVT9rOSXMDQ","score":97.1663208008,"dist":2833.678864,"info":"search:ta:826009004615403-GB","poi":{"name":"Fischer''s","phone":"+44
+        20 7466 5501","categorySet":[{"id":7315004}],"url":"www.fischers.co.uk/","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"50","streetName":"Marylebone
+        High Street","municipality":"London","neighbourhood":"Marylebone","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"W1U","extendedPostalCode":"W1U
+        5HN","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"50
+        Marylebone High Street, London, W1U 5HN","localName":"London"},"position":{"lat":51.521635,"lon":-0.151638},"viewport":{"topLeftPoint":{"lat":51.52253,"lon":-0.15308},"btmRightPoint":{"lat":51.52074,"lon":-0.15019}},"entryPoints":[{"type":"main","position":{"lat":51.52171,"lon":-0.15175}}]},{"type":"POI","id":"uBUaZFZiX564jt4obowJJg","score":96.640586853,"dist":3359.411389,"info":"search:ta:826006002878875-GB","poi":{"name":"Engel
+        Bar","phone":"+44 20 8187 2208","categorySet":[{"id":7315004}],"url":"engelbar.co.uk","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"18","streetName":"Royal
+        Exchange","municipalitySubdivision":"Monument","municipality":"London","neighbourhood":"Cornhill","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"EC3V","extendedPostalCode":"EC3V
+        3LP","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"18
+        Royal Exchange, Monument, London, EC3V 3LP","localName":"London"},"position":{"lat":51.51368,"lon":-0.086722},"viewport":{"topLeftPoint":{"lat":51.51458,"lon":-0.08817},"btmRightPoint":{"lat":51.51278,"lon":-0.08528}},"entryPoints":[{"type":"main","position":{"lat":51.51402,"lon":-0.08677}}]},{"type":"POI","id":"YkyXP2TfXB11E3pQHfXw2w","score":96.3799972534,"dist":3620.004128,"info":"search:ta:826009035707084-GB","poi":{"name":"German
+        Gymnasium","phone":"+44 20 7287 8000","categorySet":[{"id":7315004}],"url":"www.germangymnasium.com/","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetName":"King''s
+        Boulevard","municipalitySubdivision":"King''s Cross","municipality":"London","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"N1C","extendedPostalCode":"N1C
+        4BU","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"King''s
+        Boulevard, King''s Cross, London, N1C 4BU","localName":"London"},"position":{"lat":51.532422,"lon":-0.125268},"viewport":{"topLeftPoint":{"lat":51.53332,"lon":-0.12671},"btmRightPoint":{"lat":51.53152,"lon":-0.12382}},"entryPoints":[{"type":"main","position":{"lat":51.53231,"lon":-0.12507}}]},{"type":"POI","id":"FMCs6eu1GShqB3vcfCD0xg","score":95.6823654175,"dist":4317.6341,"info":"search:ta:826007000784773-GB","poi":{"name":"Kipferl","phone":"+44
+        20 7704 1555","categorySet":[{"id":7315004}],"url":"www.kipferl.co.uk","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"20","streetName":"Camden
+        Passage","municipalitySubdivision":"Islington","municipality":"London","neighbourhood":"Saint
+        Peter''s","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"N1","extendedPostalCode":"N1
+        8AJ","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"20
+        Camden Passage, Islington, London, N1 8AJ","localName":"London"},"position":{"lat":51.535135,"lon":-0.103435},"viewport":{"topLeftPoint":{"lat":51.53603,"lon":-0.10488},"btmRightPoint":{"lat":51.53424,"lon":-0.10199}},"entryPoints":[{"type":"main","position":{"lat":51.53499,"lon":-0.10375}}]},{"type":"POI","id":"8R2GQ9J0HIhacCkml4VcRA","score":95.53125,"dist":4468.746515,"info":"search:ta:826006003325334-GB","poi":{"name":"The
+        Tiroler Hut","phone":"+44 20 7727 3981","categorySet":[{"id":7315004}],"url":"www.tirolerhut.co.uk/","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"27","streetName":"Westbourne
+        Grove","municipalitySubdivision":"Bayswater","municipality":"London","neighbourhood":"Lancaster
+        Gate","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"W2","extendedPostalCode":"W2
+        4UA","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"27
+        Westbourne Grove, Bayswater, London, W2 4UA","localName":"London"},"position":{"lat":51.51552,"lon":-0.18956},"viewport":{"topLeftPoint":{"lat":51.51642,"lon":-0.19101},"btmRightPoint":{"lat":51.51462,"lon":-0.18811}},"entryPoints":[{"type":"main","position":{"lat":51.51565,"lon":-0.1896}}]},{"type":"POI","id":"WjCRQ8UssiapmIt_MtpXIg","score":95.4527435303,"dist":4547.253497,"info":"search:ta:826007000536285-GB","poi":{"name":"The
+        Austrian House","categorySet":[{"id":7315004}],"url":"www.theaustrianhouse.com","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetName":"Shoreditch
+        High Street","municipalitySubdivision":"Whitechapel","municipality":"London","neighbourhood":"Haggerston","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"E1","extendedPostalCode":"E1
+        6JJ","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"Shoreditch
+        High Street, Whitechapel, London, E1 6JJ","localName":"London"},"position":{"lat":51.5228,"lon":-0.075452},"viewport":{"topLeftPoint":{"lat":51.52411,"lon":-0.07756},"btmRightPoint":{"lat":51.52149,"lon":-0.07334}},"entryPoints":[{"type":"main","position":{"lat":51.5232,"lon":-0.07746}}]},{"type":"POI","id":"QN7Fil3sWDow0i_gZCKKFA","score":95.0354385376,"dist":4964.559859,"info":"search:ta:826006003799432-GB","poi":{"name":"Monaliciousfood","phone":"+44
+        7402 276434","categorySet":[{"id":7315004}],"url":"www.monaliciousfood.com","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"189","streetName":"Hoxton
+        Street","municipalitySubdivision":"Islington","municipality":"London","neighbourhood":"Hoxton","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"N1","extendedPostalCode":"N1
+        6RA","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"189
+        Hoxton Street, Islington, London, N1 6RA","localName":"London"},"position":{"lat":51.5322,"lon":-0.0803},"viewport":{"topLeftPoint":{"lat":51.5331,"lon":-0.08175},"btmRightPoint":{"lat":51.5313,"lon":-0.07885}},"entryPoints":[{"type":"main","position":{"lat":51.5322,"lon":-0.08016}}]},{"type":"POI","id":"ZPbGmDoxuZlZWP3nu5nY5Q","score":93.5897750854,"dist":6410.220851,"info":"search:ta:826007000672185-GB","poi":{"name":"Newcomer
+        Wines","phone":"+44 20 7249 2177","categorySet":[{"id":7315004}],"url":"newcomerwines.com","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"5","streetName":"Dalston
+        Lane","municipalitySubdivision":"Hackney","municipality":"London","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"E8","extendedPostalCode":"E8
+        3DF","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"5
+        Dalston Lane, Hackney, London, E8 3DF","localName":"London"},"position":{"lat":51.546307,"lon":-0.074814},"viewport":{"topLeftPoint":{"lat":51.54721,"lon":-0.07626},"btmRightPoint":{"lat":51.54541,"lon":-0.07337}},"entryPoints":[{"type":"main","position":{"lat":51.54625,"lon":-0.07481}}]},{"type":"POI","id":"mOLvTYSyJmTR-pAM2BiO8g","score":92.2883605957,"dist":7711.633251,"info":"search:ta:826007000456581-GB","poi":{"name":"Schnitzel
+        Forever","phone":"+44 20 7419 0022","categorySet":[{"id":7315004}],"url":"www.schnitzelforever.co.uk","categories":["austrian","restaurant"],"classifications":[{"code":"RESTAURANT","names":[{"nameLocale":"en-US","name":"austrian"},{"nameLocale":"en-US","name":"restaurant"}]}]},"address":{"streetNumber":"119","streetName":"Stoke
+        Newington Church Street","municipalitySubdivision":"Stoke Newington","municipality":"London","neighbourhood":"Clissold","countrySecondarySubdivision":"London","countrySubdivision":"ENG","countrySubdivisionName":"England","countrySubdivisionCode":"ENG","postalCode":"N16","extendedPostalCode":"N16
+        0RA","countryCode":"GB","country":"United Kingdom","countryCodeISO3":"GBR","freeformAddress":"119
+        Stoke Newington Church Street, Stoke Newington, London, N16 0RA","localName":"London"},"position":{"lat":51.562,"lon":-0.080045},"viewport":{"topLeftPoint":{"lat":51.5629,"lon":-0.08149},"btmRightPoint":{"lat":51.5611,"lon":-0.0786}},"entryPoints":[{"type":"main","position":{"lat":51.562,"lon":-0.08019}}]}]}'
+  recorded_at: Thu, 01 Jan 2026 16:44:05 GMT
+recorded_with: VCR 6.4.0

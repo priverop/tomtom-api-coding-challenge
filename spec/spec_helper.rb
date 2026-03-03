@@ -23,6 +23,9 @@ require 'webmock/rspec'
 ENV['TOMTOM_API_KEY'] ||= 'fake_key_for_tests'
 
 VCR.configure do |config|
+  config.ignore_localhost = true
+  config.ignore_hosts 'selenium'
+  config.allow_http_connections_when_no_cassette = false
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :webmock
   config.filter_sensitive_data('<SECRET_KEY>') do
@@ -34,6 +37,20 @@ require 'simplecov'
 SimpleCov.start 'rails'
 
 RSpec.configure do |config|
+  config.before(:each, type: :system) do
+    if ENV['SELENIUM_HOST'].present?
+      Capybara.server_host = "0.0.0.0"
+      Capybara.server_port = 45678
+
+      host_ip = `hostname -I`.split(' ').first
+      Capybara.app_host = "http://#{host_ip}:#{Capybara.server_port}"
+
+      driven_by :remote_chrome
+    else
+      # Configuración para local tradicional (sin Docker)
+      driven_by :selenium_chrome_headless
+    end
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

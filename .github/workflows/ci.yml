@@ -68,6 +68,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    services:
+      selenium:
+        image: selenium/standalone-chromium
+        ports:
+          - 4444:4444
+        options: >-
+          --shm-size=2g
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -80,29 +88,5 @@ jobs:
       - name: Run tests
         env:
           RAILS_ENV: test
+          SELENIUM_HOST: localhost
         run: bin/rspec
-# For Step3
-# system-test:
-#   runs-on: ubuntu-latest
-
-#   steps:
-#     - name: Checkout code
-#       uses: actions/checkout@v5
-
-#     - name: Set up Ruby
-#       uses: ruby/setup-ruby@v1
-#       with:
-#         bundler-cache: true
-
-#     - name: Run System Tests
-#       env:
-#         RAILS_ENV: test
-#       run: bin/rails test:system
-
-#     - name: Keep screenshots from failed system tests
-#       uses: actions/upload-artifact@v4
-#       if: failure()
-#       with:
-#         name: screenshots
-#         path: ${{ github.workspace }}/tmp/screenshots
-#         if-no-files-found: ignore
