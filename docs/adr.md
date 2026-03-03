@@ -6,7 +6,7 @@ List and reasoning of my decisions building this project.
 
 The library is designed following the Single Responsability principle.
 
-- BusinessFinder is the method requested in the [Step 1 issue](https://github.com/localistico/ruby-code-challenge-pablo-rivero/issues/1). It acts as the Controller of the application.
+- BusinessFinder is the method requested in the Step 1. It acts as the Controller of the application.
 
 - Location class is the requested Location Object. The idea would be to always use this class instead of a Hash of latitude and longitude.
 - TomtomService. Isolated API communication.
