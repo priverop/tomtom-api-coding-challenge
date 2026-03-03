@@ -25,7 +25,7 @@ Inside the container with everything setup, lets run the tests:
 Now let's test the API ourselves:
 - Make sure you added the API KEY.
 - Run `rails server`.
-- Using any API client (I suggest [Cartero](github.com/danirod/cartero)), request `http://localhost:3000/get_competition_info?business_name=Fischers&latitude=51.5&longitude=-0.13`.
+- Using any API client (I suggest [Cartero](https://github.com/danirod/cartero)), request `http://localhost:3000/get_competition_info?business_name=Fischers&latitude=51.5&longitude=-0.13`.
 
 > [!WARNING]
 > Don't forget to add your **TomTom API KEY** to `config/environments/development.rb`.
@@ -44,9 +44,8 @@ I replaced the *API_KEY* for a mockup string for [security](https://benoittgt.gi
 
 ## Security
 
-I implemented a basic rate limiter with [rack-attack](github.com/rack/rack-attack) at `config/initializers/rack-attack.rb`.
+I implemented a basic rate limiter with [rack-attack](https://github.com/rack/rack-attack) at `config/initializers/rack-attack.rb`.
 
 ## Improvements for this library
 - [YARD](https://yardoc.org/) documentation.
 - Automated tests in `pre-commit` with Git Hooks (I've always used [Overcommit](https://github.com/sds/overcommit)).
-- Add [rack-cors](https://github.com/cyu/rack-cors) for more security.
