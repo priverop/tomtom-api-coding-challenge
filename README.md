@@ -2,26 +2,13 @@
 
 ## Requirements
 
-Either install [VS Code](https://code.visualstudio.com/), and the [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
-
-Or install docker manually:
-- [Docker Engine](https://docs.docker.com/engine/install/). Or any Docker UI manager such as [Rancher Desktop](https://rancherdesktop.io/).
-- [Docker compose](https://docs.docker.com/compose/).
+This project runs with [Dev Containers](https://guides.rubyonrails.org/getting_started_with_devcontainer.html). Install [VS Code](https://code.visualstudio.com/), and the [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
 ## How to
 
 ### Setup
 
-This project comes with [Dev Containers](https://guides.rubyonrails.org/getting_started_with_devcontainer.html) setup. If you use VS Code you can install the [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and then run `Dev Containers: Reopen in Container`.
-
-You can also run it manually with Docker Compose:
-
-```bash
-docker compose -f .devcontainer/docker-compose.yml build
-docker compose -f .devcontainer/docker-compose.yml up
-```
-
-Get into the machine with `docker compose exec app bash` and then set up the project with `bin/setup --skip-server`.
+After installing the Dev Containers extension in VSCode, run `Dev Containers: Build and Reopen in Container`.
 
 Now add your **TomTom API KEY** to `config/environments/development.rb`.
 
