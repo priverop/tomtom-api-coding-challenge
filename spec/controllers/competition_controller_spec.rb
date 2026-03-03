@@ -115,7 +115,7 @@ RSpec.describe "Competition Controller", type: :request do
 
     context "with business_name longer than 20 characters" do
       it "returns bad request with error message" do
-        long_name = "TomTomApiTomTomApi"
+        long_name = "TomTomTomTom"
         get get_competition_info_path, params: valid_params.merge(business_name: long_name)
         expect(response).to have_http_status(:bad_request)
         expect(JSON.parse(response.body)).to eq({ "error" => "business_name parameter cannot be longer than 20 characters" })
