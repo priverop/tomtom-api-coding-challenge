@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+ENV['TOMTOM_API_KEY'] = ''
+
+require 'bundler/setup'
+require_relative '../lib/business_finder'
+
+# if ARGV.length < 3
+#   puts 'Wrong number of arguments. Usage: bin/run <business_name> <latitude> <longitude>'
+#   puts 'Example: bin/run Fischers 51.50 -0.13'
+#   exit 0
+# end
+
+business_name = 'Fischers'
+location = Location.new('51.50', '-0.13')
+
+# business_name = ARGV[0]
+# location = Location.new(ARGV[1], ARGV[2])
+
+result = BusinessFinder.find(business_name, location)
+
+p result

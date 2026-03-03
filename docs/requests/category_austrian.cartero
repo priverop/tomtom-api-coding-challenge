@@ -1,0 +1,7 @@
+version = 1
+url = "https://api.tomtom.com/search/2/categorySearch/{{query}}.{{ext}}?key={{API_KEY}}"
+method = "GET"
+
+[variables]
+ext = "json"
+query = "austrian"
