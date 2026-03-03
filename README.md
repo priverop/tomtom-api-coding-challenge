@@ -25,6 +25,10 @@ Get into the machine with `docker compose exec app bash` and then set up the pro
 
 Now add your **TomTom API KEY** to `config/environments/development.rb`.
 
+### Competition Finder Interface
+
+Start the Rails server with `rails server` and then open [http://localhost:3000/competition_finder/](http://localhost:3000/competition_finder/) in your browser.
+
 ### Testing
 
 Inside the container with everything setup, lets run the tests:

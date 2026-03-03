@@ -6,6 +6,9 @@ gem "csv" # Required for HTTParty and Ruby > 3.4.0
 gem "httparty"
 gem "ostruct" # Required for HTTParty and Ruby > 3.5.0
 
+gem "rack-attack", "~> 6.8"
+gem "rack-cors", "~> 3.0"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.1.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -58,14 +61,8 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-
-  gem "rspec"
-  gem "rspec-rails", "~> 8.0"
   gem "rubocop"
   gem "rubocop-rspec"
-  gem "simplecov"
-  gem "vcr"
-  gem "webmock"
 end
 
 group :development do
@@ -77,6 +74,9 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "rspec"
+  gem "rspec-rails", "~> 8.0"
+  gem "simplecov"
+  gem "vcr"
+  gem "webmock"
 end
-
-gem "rack-attack", "~> 6.8"

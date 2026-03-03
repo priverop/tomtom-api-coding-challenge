@@ -23,5 +23,18 @@ module TomTomApi
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Allow iframes
+    config.action_dispatch.default_headers.delete("X-Frame-Options")
+
+    # Allow cors
+    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
+      allow do
+        origins "*"
+        resource "/get_competition_info",
+          headers: :any,
+          methods: [ :get, :options ]
+      end
+    end
   end
 end

@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Basier Circle;
+    src: url('BasierCircle-Bold.otf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Basier Circle;
+    src: url('BasierCircle-SemiBold.otf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Basier Circle;
+    src: url('BasierCircle-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Layout */
+
+body {
+    color: rgb(96, 98, 102);
+    font-family: Basier Circle,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+nav {
+    padding: 20px 24px;
+}
+
+.grid-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    padding: 0 24px;
+}
+
+/* Elements */
+
+h1 {
+    font-size: 46px;
+    line-height: 55px;
+    color: rgb(38, 61, 78);
+    font-weight: 700;
+    letter-spacing: -.01em;
+    margin-bottom: 1.25rem;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+button {
+    background-color: #cc4a00;
+    color: #fff;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    border: 0;
+    margin-top: 16px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7e270a;
+}
+
+iframe {
+    border-radius: 25px;
+    background-color: rgb(238, 240, 244);
+    border: 0;
+    padding: 32px 48px;
+    margin-top: 8px;
+}
+
+.api-response {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.example {
+    background: #f2f5ff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.badge {
+    display: inline-block;
+    background: #f7fafc;
+    color: #4a5568;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
